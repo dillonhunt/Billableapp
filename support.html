@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Billable</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --surface: #1a1a1a;
+            --gold: #F5C842;
+            --text: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-tertiary: #666666;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 8px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #c0933f, #fcf5ba, #b3861a, #faf4b7, #ab7812);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            color: var(--text-tertiary);
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background-color: var(--surface);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        
+        .email-button {
+            display: inline-block;
+            background-color: var(--gold);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 14px 32px;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .email-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(245, 200, 66, 0.3);
+        }
+        
+        .links {
+            margin-top: 40px;
+        }
+        
+        .links a {
+            color: var(--text-tertiary);
+            text-decoration: none;
+            margin: 0 16px;
+            font-size: 0.9rem;
+        }
+        
+        .links a:hover {
+            color: var(--gold);
+        }
+        
+        .faq {
+            text-align: left;
+            margin-top: 40px;
+        }
+        
+        .faq-item {
+            background-color: var(--surface);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+        }
+        
+        .faq-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .faq-item p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            color: var(--text-tertiary);
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 16px;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">⏱</div>
+        <h1>Billable Support</h1>
+        <p class="tagline">We're here to help</p>
+        
+        <div class="card">
+            <h2>Contact Us</h2>
+            <p>Have a question, feedback, or need help? We typically respond within 24 hours.</p>
+            <a href="mailto:support@emberlabs.app" class="email-button">Email Support</a>
+        </div>
+        
+        <div class="faq">
+            <div class="faq-item">
+                <h3>How do I restore my purchase?</h3>
+                <p>Go to Settings in the app, tap the Pro section, then tap "Restore". Make sure you're signed into the same Apple ID used for the original purchase.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Why isn't my data syncing?</h3>
+                <p>Ensure iCloud is enabled on all devices and you're signed into the same Apple ID. Try restarting the app or your device.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How do I request a refund?</h3>
+                <p>Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com" style="color: var(--gold);">reportaproblem.apple.com</a> to submit a request.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can I export my data?</h3>
+                <p>Yes! Billable Pro includes PDF and CSV export. Go to Settings > Export Data or use the share button in the History tab.</p>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        
+        <div class="footer">
+            <p>Ember Labs</p>
+            <p style="margin-top: 4px;">© 2025 All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
